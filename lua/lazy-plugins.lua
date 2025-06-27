@@ -18,6 +18,9 @@ require('lazy').setup {
   require 'kickstart.plugins.auto-tag',
   require 'kickstart.plugins.alpha',
   require 'kickstart.plugins.rainbow-delimiters',
+  require 'kickstart.plugins.ts-autotag',
+  require 'kickstart.plugins.tailwindcss-colorizer-cmp',
+  require 'kickstart.plugins.colorizer',
 }
 
 -- vim: ts=2 sts=2 sw=2 et

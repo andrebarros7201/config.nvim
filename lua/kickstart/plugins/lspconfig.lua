@@ -244,6 +244,8 @@ return {
             'typescript.tsx',
           },
         },
+        clangd = {},
+        cpplint = {},
         stylelint = {},
         lua_ls = {
           settings = {
