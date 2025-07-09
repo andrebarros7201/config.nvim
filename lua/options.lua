@@ -56,17 +56,11 @@ vim.o.scrolloff = 10
 -- instead raise a dialog asking if you wish to save the current file(s)
 vim.o.confirm = true
 
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.smartindent = true
 vim.opt.autoindent = true
 vim.opt.expandtab = true
-
--- These change the popup color to match your colorscheme (or custom look)
-vim.cmd [[
-  highlight NormalFloat guibg=#1e1e2e guifg=#cdd6f4
-  highlight FloatBorder guibg=#1e1e2e guifg=#89b4fa
-]]
 
 -- vim: ts=2 sts=2 sw=2 et

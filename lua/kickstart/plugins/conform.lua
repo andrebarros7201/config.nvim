@@ -29,9 +29,10 @@ return {
         liquid = { 'prettier' },
         lua = { 'stylua' },
         python = { 'isort', 'black' },
-        c = { 'cpplint' },
-        cpp = { 'cpplint' },
+        c = { 'clang-format' },
+        cpp = { 'clang-format' },
       },
+
       format_on_save = {
         lsp_fallback = true,
         async = false,

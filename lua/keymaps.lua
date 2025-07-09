@@ -47,4 +47,32 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- COMPLETION
+-- Next item
+vim.keymap.set('i', '<Tab>', function()
+  if vim.fn.pumvisible() == 1 then
+    return '<C-n>'
+  else
+    return '<Tab>'
+  end
+end, { expr = true, noremap = true })
+
+-- Shift-Tab prev item
+vim.keymap.set('i', '<S-Tab>', function()
+  if vim.fn.pumvisible() == 1 then
+    return '<C-p>'
+  else
+    return '<S-Tab>'
+  end
+end, { expr = true, noremap = true })
+
+-- Enter to accept
+vim.keymap.set('i', '<CR>', function()
+  if vim.fn.pumvisible() == 1 then
+    return '<C-y>' -- Accept selected item
+  else
+    return '<CR>' -- Just insert newline
+  end
+end, { expr = true, noremap = true })
+
 -- vim: ts=2 sts=2 sw=2 et
